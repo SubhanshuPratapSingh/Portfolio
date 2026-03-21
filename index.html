@@ -12,29 +12,34 @@
 body{
 margin:0;
 font-family:Poppins;
-background:linear-gradient(135deg,#020617,#0f172a);
+background:#020617;
 color:white;
-scroll-behavior:smooth;
+overflow-x:hidden;
 }
 
-/* HEADER */
-header{
+/* HERO */
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
 text-align:center;
-padding:100px 20px;
+background:linear-gradient(135deg,#020617,#0f172a);
 }
 
 h1{
-font-size:48px;
+font-size:50px;
 color:#38bdf8;
 }
 
 .typing{
 color:#22d3ee;
-font-size:20px;
+font-size:22px;
 }
 
 /* BUTTONS */
-.top-links a{
+.btn{
 margin:10px;
 padding:12px 25px;
 border-radius:30px;
@@ -46,16 +51,16 @@ transition:0.3s;
 box-shadow:0 0 20px rgba(56,189,248,0.5);
 }
 
-.top-links a:hover{
+.btn:hover{
 transform:scale(1.1);
 background:white;
 }
 
 /* SECTION */
 section{
-max-width:1000px;
+max-width:1100px;
 margin:auto;
-padding:20px;
+padding:60px 20px;
 }
 
 .card{
@@ -66,7 +71,7 @@ border-radius:20px;
 margin:25px 0;
 transition:0.4s;
 opacity:0;
-transform:translateY(40px);
+transform:translateY(50px);
 }
 
 .card.show{
@@ -78,6 +83,25 @@ transform:translateY(0);
 transform:translateY(-10px) scale(1.02);
 }
 
+/* PROJECT GRID */
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.project-card{
+background:#0f172a;
+padding:20px;
+border-radius:15px;
+transition:0.3s;
+}
+
+.project-card:hover{
+transform:scale(1.05);
+background:#1e293b;
+}
+
 /* SKILLS */
 .skills span{
 background:#38bdf8;
@@ -86,12 +110,6 @@ padding:8px 14px;
 border-radius:12px;
 margin:6px;
 display:inline-block;
-}
-
-/* LINKS */
-a{
-color:#38bdf8;
-text-decoration:none;
 }
 
 /* FOOTER */
@@ -106,26 +124,26 @@ opacity:0.7;
 
 <body>
 
-<header>
+<div class="hero">
 <h1>Subhanshu Pratap Singh</h1>
 <p class="typing" id="typing"></p>
 
-<div class="top-links">
-<a href="https://github.com/SubhanshuPratapSingh">🚀 GitHub</a>
-<a href="https://www.linkedin.com/in/subhanshu-pratap-singh/">💼 LinkedIn</a>
+<div>
+<a href="https://github.com/SubhanshuPratapSingh" class="btn">🚀 GitHub</a>
+<a href="https://www.linkedin.com/in/subhanshu-pratap-singh/" class="btn">💼 LinkedIn</a>
 </div>
-</header>
+</div>
 
 <section>
 
 <div class="card">
 <h2>Summary</h2>
-<p>Empathetic and dynamic professional with strong leadership, teamwork, and problem-solving skills.</p>
+<p>Empathetic and dynamic professional with strong leadership and problem-solving skills.</p>
 </div>
 
 <div class="card">
 <h2>Objective</h2>
-<p>To start my career in the technology industry and contribute to innovative software solutions.</p>
+<p>To build impactful software solutions and grow in the tech industry.</p>
 </div>
 
 <div class="card skills">
@@ -135,26 +153,47 @@ opacity:0.7;
 <span>OOPS</span>
 <span>DBMS</span>
 <span>DSA</span>
+<span>Computer Network</span>
+<span>Communication Skills</span>
 <span>Leadership</span>
 <span>Teamwork</span>
+<span>Time Management</span>
+<span>Project Management</span>
 </div>
 
 <div class="card">
 <h2>Projects</h2>
 
-<p><b>Library Management System</b></p>
-<p><b>E-Commerce Storefront</b></p>
-<p><b>Rebrand Website (AI)</b></p>
-<p><b>Notes Management App</b></p>
+<div class="projects">
+
+<div class="project-card">
+<h3>Library Management System</h3>
+<p>Java + Database project</p>
+</div>
+
+<div class="project-card">
+<h3>E-Commerce Storefront</h3>
+<p>Frontend project</p>
+</div>
+
+<div class="project-card">
+<h3>Rebrand Website</h3>
+<p>AI-based redesign</p>
+</div>
+
+<div class="project-card">
+<h3>Notes Management App</h3>
+<p>CRUD application</p>
+</div>
+
+</div>
 
 </div>
 
 <div class="card">
 <h2>Research Papers</h2>
-
 <p>Automatic Weapon System (JETIR)</p>
 <p>Sentiment Analysis of Customer Feedback</p>
-
 </div>
 
 <div class="card">
@@ -167,7 +206,7 @@ opacity:0.7;
 <p>DigiSaksham AI</p>
 <p>Samsung Innovation Campus</p>
 <p>Ducat Certification</p>
-<p>Hackathon Participation</p>
+<p>Hackathons</p>
 </div>
 
 <div class="card">
@@ -177,21 +216,10 @@ opacity:0.7;
 <p>10th – ICSE</p>
 </div>
 
-<div class="card">
-<h2>Resume</h2>
-<a href="resume.pdf">📄 Download Resume</a>
-</div>
-
-<div class="card">
-<h2>Contact</h2>
-<p>📧 subhanshu.cs@email.com</p>
-<p>📱 +91 7520437425</p>
-</div>
-
 </section>
 
 <footer>
-<p>© 2026 Subhanshu Pratap Singh</p>
+<p>© 2025 Subhanshu Pratap Singh</p>
 </footer>
 
 <script>
