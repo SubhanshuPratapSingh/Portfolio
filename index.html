@@ -10,46 +10,95 @@
 
 <style>
 body{
-    margin:0;
-    font-family:Poppins;
-    background:#0f172a;
-    color:white;
+margin:0;
+font-family:Poppins;
+background:linear-gradient(135deg,#020617,#0f172a);
+color:white;
+scroll-behavior:smooth;
 }
+
+/* HEADER */
 header{
-    text-align:center;
-    padding:60px 20px;
+text-align:center;
+padding:100px 20px;
 }
+
 h1{
-    font-size:40px;
-    color:#38bdf8;
+font-size:48px;
+color:#38bdf8;
 }
+
+.typing{
+color:#22d3ee;
+font-size:20px;
+}
+
+/* BUTTONS */
+.top-links a{
+margin:10px;
+padding:12px 25px;
+border-radius:30px;
+background:linear-gradient(45deg,#38bdf8,#22d3ee);
+color:black;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+box-shadow:0 0 20px rgba(56,189,248,0.5);
+}
+
+.top-links a:hover{
+transform:scale(1.1);
+background:white;
+}
+
+/* SECTION */
 section{
-    padding:40px 20px;
-    max-width:1000px;
-    margin:auto;
+max-width:1000px;
+margin:auto;
+padding:20px;
 }
+
 .card{
-    background:#1e293b;
-    padding:20px;
-    border-radius:15px;
-    margin-bottom:20px;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(12px);
+padding:25px;
+border-radius:20px;
+margin:25px 0;
+transition:0.4s;
+opacity:0;
+transform:translateY(40px);
 }
-a{
-    color:#38bdf8;
-    text-decoration:none;
+
+.card.show{
+opacity:1;
+transform:translateY(0);
 }
+
+.card:hover{
+transform:translateY(-10px) scale(1.02);
+}
+
+/* SKILLS */
 .skills span{
-    background:#38bdf8;
-    padding:5px 10px;
-    margin:5px;
-    display:inline-block;
-    border-radius:10px;
-    color:black;
+background:#38bdf8;
+color:black;
+padding:8px 14px;
+border-radius:12px;
+margin:6px;
+display:inline-block;
 }
+
+/* LINKS */
+a{
+color:#38bdf8;
+text-decoration:none;
+}
+
+/* FOOTER */
 footer{
-    text-align:center;
-    padding:20px;
-    background:#020617;
+text-align:center;
+padding:30px;
+opacity:0.7;
 }
 </style>
 
@@ -59,49 +108,123 @@ footer{
 
 <header>
 <h1>Subhanshu Pratap Singh</h1>
-<p>💻 Aspiring Full Stack Developer | Java & DSA Enthusiast | Problem Solver 💻</p>
+<p class="typing" id="typing"></p>
+
+<div class="top-links">
+<a href="https://github.com/SubhanshuPratapSingh">🚀 GitHub</a>
+<a href="https://www.linkedin.com/in/subhanshu-pratap-singh/">💼 LinkedIn</a>
+</div>
 </header>
 
 <section>
+
 <div class="card">
-<h2>About Me</h2>
-<p>I am a passionate developer focused on backend development and problem solving. I enjoy building real-world applications.</p>
+<h2>Summary</h2>
+<p>Empathetic and dynamic professional with strong leadership, teamwork, and problem-solving skills.</p>
 </div>
 
 <div class="card">
-<h2>Projects</h2>
-<p><b>ERP System</b> – Backend project using Spring Boot</p>
-<p><b>Library Management System</b> – Java project</p>
-<p><b>Notes-Management-App</b> – Notes Management App</p>
-</div>
-
-<div class="card">
-<h2>Certificates</h2>
-<p>DigiSaksham AI Program</p>
-<p>Web Developer Internship</p>
+<h2>Objective</h2>
+<p>To start my career in the technology industry and contribute to innovative software solutions.</p>
 </div>
 
 <div class="card skills">
 <h2>Skills</h2>
 <span>Java</span>
-<span>Spring Boot</span>
-<span>SQL</span>
-<span>HTML</span>
-<span>CSS</span>
+<span>C</span>
+<span>OOPS</span>
+<span>DBMS</span>
+<span>DSA</span>
+<span>Leadership</span>
+<span>Teamwork</span>
+</div>
+
+<div class="card">
+<h2>Projects</h2>
+
+<p><b>Library Management System</b></p>
+<p><b>E-Commerce Storefront</b></p>
+<p><b>Rebrand Website (AI)</b></p>
+<p><b>Notes Management App</b></p>
+
+</div>
+
+<div class="card">
+<h2>Research Papers</h2>
+
+<p>Automatic Weapon System (JETIR)</p>
+<p>Sentiment Analysis of Customer Feedback</p>
+
+</div>
+
+<div class="card">
+<h2>Experience</h2>
+<p>Full Stack Web Development Intern – Future Interns</p>
+</div>
+
+<div class="card">
+<h2>Certifications</h2>
+<p>DigiSaksham AI</p>
+<p>Samsung Innovation Campus</p>
+<p>Ducat Certification</p>
+<p>Hackathon Participation</p>
+</div>
+
+<div class="card">
+<h2>Education</h2>
+<p>B.Tech CSE – Noida International University</p>
+<p>12th – NIOS</p>
+<p>10th – ICSE</p>
+</div>
+
+<div class="card">
+<h2>Resume</h2>
+<a href="resume.pdf">📄 Download Resume</a>
 </div>
 
 <div class="card">
 <h2>Contact</h2>
-<p>Email: subhanshukumar381@gmail.com</p>
-<p>GitHub: <a href="https://github.com/SubhanshuPratapSingh">https://github.com/SubhanshuPratapSingh</a></p>
-<p>LinkedIn: <a href="#">www.linkedin.com/in/subhanshu-pratap-singh</a></p>
+<p>📧 subhanshu.cs@email.com</p>
+<p>📱 +91 7520437425</p>
 </div>
 
 </section>
 
 <footer>
-<p>© 2025 Subhanshu Pratap Singh</p>
+<p>© 2026 Subhanshu Pratap Singh</p>
 </footer>
+
+<script>
+// Typing animation
+const text=["Software Developer","Java Developer","Problem Solver"];
+let i=0,j=0,isDeleting=false;
+
+function type(){
+let current=text[i];
+document.getElementById("typing").textContent=current.substring(0,j);
+
+if(!isDeleting && j<current.length) j++;
+else if(isDeleting && j>0) j--;
+else{
+isDeleting=!isDeleting;
+if(!isDeleting) i=(i+1)%text.length;
+}
+
+setTimeout(type,isDeleting?50:100);
+}
+type();
+
+// Scroll animation
+const cards=document.querySelectorAll(".card");
+
+window.addEventListener("scroll",()=>{
+cards.forEach(card=>{
+if(card.getBoundingClientRect().top < window.innerHeight-100){
+card.classList.add("show");
+}
+});
+});
+</script>
 
 </body>
 </html>
