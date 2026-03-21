@@ -1,7 +1,8 @@
 # 🚀 Subhanshu Pratap Singh – Portfolio
 
-🔗 **Live Website:**
-https://subhanshupratapsingh.github.io/Portfolio
+<a href="https://subhanshupratapsingh.github.io/Portfolio" target="_blank">
+🔗 Live Website
+</a>
 
 ---
 
