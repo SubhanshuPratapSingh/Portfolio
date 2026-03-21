@@ -38,6 +38,6 @@ Java • OOPS • DBMS • DSA • C • HTML • CSS • JavaScript
 
 ## 📫 Contact
 
-📧 [subhanshu.cs@email.com](mailto:subhanshu.cs@gmail.com)
+📧 [subhanshu.cs@gmail.com](mailto:subhanshu.cs@gmail.com)
 🔗 GitHub: https://github.com/SubhanshuPratapSingh
 💼 LinkedIn: https://www.linkedin.com/in/subhanshu-pratap-singh/
